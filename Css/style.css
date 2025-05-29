@@ -1,0 +1,252 @@
+:root {
+  --body-background: #d9d9d9;
+  --nav-color: #7c5d5d;
+  --hero-background: #5a5a5a;
+  --pro-bacground: #51547a;
+  --logo-font: 24px;
+  --font: 20px;
+  --box-bg: #a2bddc;
+  --form-bg: #9F9D92;
+  --footer-bg: #282727;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.container {
+  width: 1200px;
+  margin: auto;
+}
+body {
+  background-color: var(--body-background);
+  color: black;
+}
+/*--- Nav Section --- */
+nav {
+  background-color: var(--nav-color);
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: var(--logo-font);
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav ul li {
+  list-style: none;
+  padding: 25px 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: var(--font);
+}
+section {
+  border-bottom: 9px solid #d0abab;
+  padding: 40px 0px;
+}
+/*--- Hero Section --- */
+.hero {
+  background-color: var(--hero-background);
+  text-align: center;
+}
+.hero-body {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.hero-text {
+  margin: 0 100px 0 40px;
+  text-align: justify;
+  color: white;
+}
+.hero-text p{
+    margin-top: 20px;
+    font-size: 22px;
+}
+.hero-img {
+  padding: 50px;
+}
+.hero-img img {
+  opacity: 65%;
+}
+
+/*--- Projects Section --- */
+.projects {
+  background-color: var(--pro-bacground);
+  text-align: center;
+}
+.hero h1, .projects h1, .aboutme h1, .contact h1{
+    font-size: 36px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+.card {
+  background-color: #d9d9d9;
+  border-radius: 50px;
+  min-height: 390px;
+  overflow: hidden;
+}
+.bottom-pad {
+  padding-bottom: 40px;
+}
+.card-header {
+  padding: 20px;
+}
+.card-header img:hover {
+  transform: scale(1.1);
+}
+/*--- About Me Section --- */
+.aboutme {
+  text-align: center;
+}
+.box {
+  border: 2px solid;
+  border-radius: 50px;
+  padding: 50px;
+  background: #a2bddc;
+  font-size: 1.5em;
+}
+.box-body h4 {
+  text-align: center;
+}
+.box-body p {
+  text-align: justify;
+}
+/*--- Contact Section --- */
+.contact {
+  text-align: center;
+}
+
+.form-box{
+    max-width: 450px;
+    margin: auto;
+    padding: 55px;
+    overflow: hidden;
+    border: 2px solid;
+    background-color: var(--form-bg);
+    border-radius: 30px;
+}
+form{
+   /* display: block; */
+}
+form label, input{
+    margin-bottom: 10px;
+    display: block;
+}
+form label{
+    font-size: 16px;
+    text-align: left;
+}
+form input{
+    border-radius: 5px;
+    border: none;
+    padding: 10px 30px 10px 10px;
+    min-width: 320px;
+}
+form button {
+    margin: 10px auto ;
+    padding: 8px 30px;
+    border-radius: 10px;
+    border: none;
+}
+form textarea{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    resize: none;
+    margin: auto;
+}
+/*--- Footer Section --- */
+footer {
+    background-color: var(--footer-bg);
+    color: white;
+    min-height:120px ;
+
+}
+
+.links-such{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    
+}
+.icon span{
+    display: inline-block;
+    padding: 0px 10px;
+}
+.icon span i{
+    font-size: 35px;
+    color: white;
+
+}
+.rights p{
+    font-size: 20px;
+}
+
+@media screen and (max-width:390px) {
+  .container {
+  width: auto;
+  margin: auto;
+}
+  nav {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.hero-text {
+  margin:  auto 50px;
+  text-align: justify;
+  color: white;
+}
+.cards {
+  display: grid;
+  grid-template-columns: 1fr  ;
+  /* gap: 30px; */
+  margin: 0 20px;
+}
+.aboutme .box{
+  margin: 20px;
+}
+.contact .form-box{
+  margin: 20px;
+}
+.links-such{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    gap: 40px;
+    
+}
+
+}
