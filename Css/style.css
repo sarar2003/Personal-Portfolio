@@ -6,7 +6,7 @@
   --logo-font: 24px;
   --font: 20px;
   --box-bg: #a2bddc;
-  --form-bg: #9F9D92;
+  --form-bg: #9f9d92;
   --footer-bg: #282727;
 }
 * {
@@ -72,9 +72,9 @@ section {
   text-align: justify;
   color: white;
 }
-.hero-text p{
-    margin-top: 20px;
-    font-size: 22px;
+.hero-text p {
+  margin-top: 20px;
+  font-size: 22px;
 }
 .hero-img {
   padding: 50px;
@@ -88,8 +88,11 @@ section {
   background-color: var(--pro-bacground);
   text-align: center;
 }
-.hero h1, .projects h1, .aboutme h1, .contact h1{
-    font-size: 36px;
+.hero h1,
+.projects h1,
+.aboutme h1,
+.contact h1 {
+  font-size: 36px;
 }
 .cards {
   display: grid;
@@ -133,120 +136,115 @@ section {
   text-align: center;
 }
 
-.form-box{
-    max-width: 450px;
-    margin: auto;
-    padding: 55px;
-    overflow: hidden;
-    border: 2px solid;
-    background-color: var(--form-bg);
-    border-radius: 30px;
+.form-box {
+  max-width: 450px;
+  margin: auto;
+  padding: 55px;
+  overflow: hidden;
+  border: 2px solid;
+  background-color: var(--form-bg);
+  border-radius: 30px;
 }
-form{
-   /* display: block; */
+form {
+  /* display: block; */
 }
-form label, input{
-    margin-bottom: 10px;
-    display: block;
+form label,
+input {
+  margin-bottom: 10px;
+  display: block;
 }
-form label{
-    font-size: 16px;
-    text-align: left;
+form label {
+  font-size: 16px;
+  text-align: left;
 }
-form input{
-    border-radius: 5px;
-    border: none;
-    padding: 10px 30px 10px 10px;
-    min-width: 320px;
+form input {
+  border-radius: 5px;
+  border: none;
+  padding: 10px 30px 10px 10px;
+  min-width: 320px;
 }
 form button {
-    margin: 10px auto ;
-    padding: 8px 30px;
-    border-radius: 10px;
-    border: none;
+  margin: 10px auto;
+  padding: 8px 30px;
+  border-radius: 10px;
+  border: none;
 }
-form textarea{
-    padding: 10px;
-    border-radius: 10px;
-    border: none;
-    resize: none;
-    margin: auto;
+form textarea {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  resize: none;
+  margin: auto;
 }
 /*--- Footer Section --- */
 footer {
-    background-color: var(--footer-bg);
-    color: white;
-    min-height:120px ;
-
+  background-color: var(--footer-bg);
+  color: white;
+  min-height: 120px;
 }
 
-.links-such{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 50px;
-    
-}
-.icon span{
-    display: inline-block;
-    padding: 0px 10px;
-}
-.icon span i{
-    font-size: 35px;
-    color: white;
-
-}
-.rights p{
-    font-size: 20px;
-}
-
-@media screen and (max-width:390px) {
-  .container {
-  width: auto;
-  margin: auto;
-}
-  nav {
+.links-such {
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  flex-direction: column;
+  padding: 50px;
 }
-nav ul {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
+.icon span {
+  display: inline-block;
+  padding: 0px 10px;
 }
-.hero-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-}
-.hero-text {
-  margin:  auto 50px;
-  text-align: justify;
+.icon span i {
+  font-size: 35px;
   color: white;
 }
-.cards {
-  display: grid;
-  grid-template-columns: 1fr  ;
-  /* gap: 30px; */
-  margin: 0 20px;
+.rights p {
+  font-size: 20px;
 }
-.aboutme .box{
-  margin: 20px;
-}
-.contact .form-box{
-  margin: 20px;
-}
-.links-such{
+
+@media screen and (max-width: 390px) {
+  .container {
+    width: auto;
+    margin: auto;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  nav ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .hero-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-text {
+    margin: auto 50px;
+    text-align: justify;
+    color: white;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* gap: 30px; */
+    margin: 0 20px;
+  }
+  .aboutme .box {
+    margin: 20px;
+  }
+  .contact .form-box {
+    margin: 20px;
+  }
+  .links-such {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 50px;
     gap: 40px;
-    
-}
-
+  }
 }
